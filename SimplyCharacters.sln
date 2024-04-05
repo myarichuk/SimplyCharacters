@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D&D", "D&D", "{0A2BC802-70D
 		src\SystemDefinitions\D&D\CharacterAttributes.yaml = src\SystemDefinitions\D&D\CharacterAttributes.yaml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyCharacters.Tests.Functional", "tests\SimplyCharacters.Tests.Functional\SimplyCharacters.Tests.Functional.csproj", "{F9525438-7294-4A3C-AAEB-4251326FD95D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{C41A64D0-2F23-4C09-BCC6-F3512E7584A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C41A64D0-2F23-4C09-BCC6-F3512E7584A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C41A64D0-2F23-4C09-BCC6-F3512E7584A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9525438-7294-4A3C-AAEB-4251326FD95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9525438-7294-4A3C-AAEB-4251326FD95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9525438-7294-4A3C-AAEB-4251326FD95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9525438-7294-4A3C-AAEB-4251326FD95D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{C41A64D0-2F23-4C09-BCC6-F3512E7584A3} = {F2BF7BB1-1A5F-4EB1-A6CA-F713B3D48F34}
 		{A3D64C46-C234-4F5B-81FE-871483B0B101} = {58526044-8E95-4B53-BC70-E88F09659A7C}
 		{0A2BC802-70DC-41C9-9643-FAEF00326B58} = {A3D64C46-C234-4F5B-81FE-871483B0B101}
+		{F9525438-7294-4A3C-AAEB-4251326FD95D} = {F2BF7BB1-1A5F-4EB1-A6CA-F713B3D48F34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60C04C67-6555-4DD4-80C4-197917321E08}
