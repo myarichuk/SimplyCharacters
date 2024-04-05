@@ -1,0 +1,18 @@
+Strength:
+  Description: "A measure of physical power and force. Affects the ability to wield heavy weapons, carry weight, and perform feats of physical strength."
+  Value: 10
+Dexterity:
+  Description: "A measure of agility, reflexes, and balance. Influences initiative, ranged attack rolls, and ability to dodge attacks."
+  Value: 10
+Constitution:
+  Description: "A measure of health, stamina, and vital force. Determines hit points, endurance, and resistance to disease and poison."
+  Value: 10
+Intelligence:
+  Description: "A measure of mental acuity, accuracy of recall, and the ability to reason. Affects the number of languages known, spell complexity, and knowledge skills."
+  Value: 10
+Wisdom:
+  Description: "A measure of perception and insight. Influences sense motive, perception, and effectiveness of healing spells."
+  Value: 10
+Charisma:
+  Description: "A measure of force of personality, persuasiveness, leadership, and physical attractiveness. Affects social interactions and the ability to influence others."
+  Value: 10
