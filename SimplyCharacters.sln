@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{58526044-8E9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F2BF7BB1-1A5F-4EB1-A6CA-F713B3D48F34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyCharacters.Abstract", "src\SimplyCharacters.Abstract\SimplyCharacters.Abstract.csproj", "{AA59DEC0-ED4A-481E-9781-A9A7A3860F23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplyCharacters.Abstract", "src\SimplyCharacters.Abstract\SimplyCharacters.Abstract.csproj", "{AA59DEC0-ED4A-481E-9781-A9A7A3860F23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyCharacters.Tests.Unit", "tests\SimplyCharacters.Tests.Unit\SimplyCharacters.Tests.Unit.csproj", "{C41A64D0-2F23-4C09-BCC6-F3512E7584A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplyCharacters.Tests.Unit", "tests\SimplyCharacters.Tests.Unit\SimplyCharacters.Tests.Unit.csproj", "{C41A64D0-2F23-4C09-BCC6-F3512E7584A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemDefinitions", "SystemDefinitions", "{A3D64C46-C234-4F5B-81FE-871483B0B101}"
 EndProject
@@ -18,7 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D&D", "D&D", "{0A2BC802-70D
 		src\SystemDefinitions\D&D\CharacterAttributes.yaml = src\SystemDefinitions\D&D\CharacterAttributes.yaml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyCharacters.Tests.Functional", "tests\SimplyCharacters.Tests.Functional\SimplyCharacters.Tests.Functional.csproj", "{F9525438-7294-4A3C-AAEB-4251326FD95D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplyCharacters.Tests.Functional", "tests\SimplyCharacters.Tests.Functional\SimplyCharacters.Tests.Functional.csproj", "{F9525438-7294-4A3C-AAEB-4251326FD95D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyCharacters.UI.Server", "src\SimplyCharacters.UI\SimplyCharacters.UI.Server\SimplyCharacters.UI.Server.csproj", "{7C195C76-138D-4227-94FD-6A9E344AA8F1}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "simplycharacters.ui.client", "src\SimplyCharacters.UI\simplycharacters.ui.client\simplycharacters.ui.client.esproj", "{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,16 @@ Global
 		{F9525438-7294-4A3C-AAEB-4251326FD95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9525438-7294-4A3C-AAEB-4251326FD95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9525438-7294-4A3C-AAEB-4251326FD95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C195C76-138D-4227-94FD-6A9E344AA8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C195C76-138D-4227-94FD-6A9E344AA8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C195C76-138D-4227-94FD-6A9E344AA8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C195C76-138D-4227-94FD-6A9E344AA8F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +62,8 @@ Global
 		{A3D64C46-C234-4F5B-81FE-871483B0B101} = {58526044-8E95-4B53-BC70-E88F09659A7C}
 		{0A2BC802-70DC-41C9-9643-FAEF00326B58} = {A3D64C46-C234-4F5B-81FE-871483B0B101}
 		{F9525438-7294-4A3C-AAEB-4251326FD95D} = {F2BF7BB1-1A5F-4EB1-A6CA-F713B3D48F34}
+		{7C195C76-138D-4227-94FD-6A9E344AA8F1} = {58526044-8E95-4B53-BC70-E88F09659A7C}
+		{355D91D0-877A-4469-A9B4-7AB0EDE15B3C} = {58526044-8E95-4B53-BC70-E88F09659A7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60C04C67-6555-4DD4-80C4-197917321E08}

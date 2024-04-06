@@ -19,12 +19,12 @@ public class ObservableValue
         {
             var changeNotification = new ValueChangeNotification(_value, value);
             _value = value;
-            AttributeChanged?.Invoke(changeNotification);
+            ValueChanged?.Invoke(changeNotification);
         }
     }
 
     /// <summary>
     /// Occurs when the value changes, providing details of the change.
     /// </summary>
-    public event Action<ValueChangeNotification>? AttributeChanged;
+    public event Action<ValueChangeNotification>? ValueChanged;
 }

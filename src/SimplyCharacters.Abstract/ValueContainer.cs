@@ -5,29 +5,29 @@ using YamlDotNet.Serialization;
 using SimplyCharacters.Abstract.Components;
 using SimplyCharacters.Abstract.Notifications;
 
-public class CharacterAttributes : IEnumerable<ObservableNamedValue>
+public class ValueContainer : IEnumerable<ObservableNamedValue>
 {
     private readonly Dictionary<string, ObservableNamedValue> _attributes = new(StringComparer.InvariantCultureIgnoreCase);
 
-    public event Action<(ObservableNamedValue Origin, ValueChangeNotification Event)>? AttributeChanged;
+    public event Action<(ObservableNamedValue Origin, ValueChangeNotification Event)>? ValueChanged;
 
     /// <summary>
     /// Initializes a new instance of the CharacterAttributeContainer class by loading attribute definitions from the given YAML string.
     /// </summary>
     /// <param name="yaml">The YAML string containing attribute definitions.</param>
-    public CharacterAttributes(string yaml) => LoadAttributesFromYaml(yaml);
+    public ValueContainer(string yaml) => LoadAttributesFromYaml(yaml);
 
     /// <summary>
     /// Initializes a new instance of the CharacterAttributeContainer class by copying from another dictionary-like structure.
     /// </summary>
     /// <param name="yaml">Array containing attribute definitions as key/value pairs.</param>
-    public CharacterAttributes(params KeyValuePair<string, ObservableNamedValue>[] attributes)
+    public ValueContainer(params KeyValuePair<string, ObservableNamedValue>[] attributes)
     {
         foreach(var item in attributes)
         {
             var value = item.Value;
             _attributes.Add(item.Key, value);
-            item.Value.AttributeChanged += @event => AttributeChanged?.Invoke((value, @event));
+            item.Value.ValueChanged += @event => ValueChanged?.Invoke((value, @event));
         }
     }
 

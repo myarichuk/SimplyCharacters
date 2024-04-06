@@ -20,7 +20,7 @@ namespace SimplyCharacters.Tests
         [Fact]
         public void Constructor_YamlString_CorrectlyInitializesAttributes()
         {
-            var container = new CharacterAttributes(TestYaml);
+            var container = new ValueContainer(TestYaml);
             
             Assert.True(container.TryGetAttribute("Strength", out var strength));
             Assert.Equal(10u, strength?.Value);
@@ -36,7 +36,7 @@ namespace SimplyCharacters.Tests
         {
             var strength = new ObservableNamedValue { Name = "Strength", Description = "Physical power", Value = 10 };
             var intelligence = new ObservableNamedValue { Name = "Intelligence", Description = "Mental acuity", Value = 15 };
-            var container = new CharacterAttributes(
+            var container = new ValueContainer(
                 new KeyValuePair<string, ObservableNamedValue>("Strength", strength),
                 new KeyValuePair<string, ObservableNamedValue>("Intelligence", intelligence)
             );
@@ -48,7 +48,7 @@ namespace SimplyCharacters.Tests
         [Fact]
         public void Indexer_GetSetWorksCorrectly()
         {
-            var container = new CharacterAttributes(TestYaml);
+            var container = new ValueContainer(TestYaml);
             Assert.Equal(10u, container["Strength"]);
             
             container["Strength"] = 12;
@@ -58,14 +58,14 @@ namespace SimplyCharacters.Tests
         [Fact]
         public void Indexer_ThrowsOnUndefinedAttribute()
         {
-            var container = new CharacterAttributes(TestYaml);
+            var container = new ValueContainer(TestYaml);
             Assert.Throws<KeyNotFoundException>(() => container["Agility"]);
         }
 
         [Fact]
         public void TryGetAttribute_ReturnsCorrectly()
         {
-            var container = new CharacterAttributes(TestYaml);
+            var container = new ValueContainer(TestYaml);
             Assert.True(container.TryGetAttribute("Strength", out _));
             Assert.False(container.TryGetAttribute("Agility", out _));
         }
@@ -73,7 +73,7 @@ namespace SimplyCharacters.Tests
         [Fact]
         public void GetEnumerator_IteratesOverAllAttributes()
         {
-            var container = new CharacterAttributes(TestYaml);
+            var container = new ValueContainer(TestYaml);
             var attributeNames = new List<string>();
 
             foreach (var attr in container)

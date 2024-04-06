@@ -1,0 +1,6 @@
+@SimplyCharacters.UI.Server_HostAddress = http://localhost:5161
+
+GET {{SimplyCharacters.UI.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
