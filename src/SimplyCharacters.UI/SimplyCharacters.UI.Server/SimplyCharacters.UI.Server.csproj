@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\simplycharacters.ui.client\simplycharacters.ui.client.esproj">
+    <ProjectReference Include="..\simplycharacters.ui.client\SimplyCharacters.UI.Client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

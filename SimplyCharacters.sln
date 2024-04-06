@@ -22,7 +22,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplyCharacters.Tests.Func
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyCharacters.UI.Server", "src\SimplyCharacters.UI\SimplyCharacters.UI.Server\SimplyCharacters.UI.Server.csproj", "{7C195C76-138D-4227-94FD-6A9E344AA8F1}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "simplycharacters.ui.client", "src\SimplyCharacters.UI\simplycharacters.ui.client\simplycharacters.ui.client.esproj", "{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "SimplyCharacters.UI.Client", "src\SimplyCharacters.UI\simplycharacters.ui.client\SimplyCharacters.UI.Client.esproj", "{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
