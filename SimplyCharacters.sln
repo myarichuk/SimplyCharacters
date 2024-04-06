@@ -20,9 +20,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D&D", "D&D", "{0A2BC802-70D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplyCharacters.Tests.Functional", "tests\SimplyCharacters.Tests.Functional\SimplyCharacters.Tests.Functional.csproj", "{F9525438-7294-4A3C-AAEB-4251326FD95D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyCharacters.UI.Server", "src\SimplyCharacters.UI\SimplyCharacters.UI.Server\SimplyCharacters.UI.Server.csproj", "{7C195C76-138D-4227-94FD-6A9E344AA8F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplyCharacters.UI.Server", "src\SimplyCharacters.UI\SimplyCharacters.UI.Server\SimplyCharacters.UI.Server.csproj", "{7C195C76-138D-4227-94FD-6A9E344AA8F1}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "SimplyCharacters.UI.Client", "src\SimplyCharacters.UI\simplycharacters.ui.client\SimplyCharacters.UI.Client.esproj", "{355D91D0-877A-4469-A9B4-7AB0EDE15B3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "design", "design", "{CFB166E3-9765-4F77-B8C4-E2E2F2C99EBE}"
+	ProjectSection(SolutionItems) = preProject
+		design\system-components.md = design\system-components.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
